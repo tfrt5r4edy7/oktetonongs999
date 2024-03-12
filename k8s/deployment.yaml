@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: omke
+  name: boxhseu
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: omke
+      app: boxhseu
   template:
     metadata:
       labels:
-        app: omke
+        app: boxhseu
     spec:
       containers:
-      - image: okteto.dev/omke:latest
-        name: omke
+      - image: okteto.dev/boxhseu:latest
+        name: boxhseu
         ports:
         - containerPort: 8080
         env:
